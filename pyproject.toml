@@ -17,6 +17,7 @@ pyjwt = "^2.8.0"
 passlib = {extras = ["bcrypt"], version = "^1.7.4"}
 tzdata = "^2024.1"
 python-multipart = "^0.0.9"
+pytest-asyncio = "^0.23.7"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -45,6 +46,7 @@ quote-style = 'single'
 [tool.pytest.ini_options]
 pythonpath = "."
 addopts = '-p no:warnings'
+asyncio_mode = "auto"
 
 [tool.taskipy.tasks]
 lint = 'ruff check . && ruff check . --diff'
