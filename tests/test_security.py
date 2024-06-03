@@ -24,4 +24,3 @@ async def test_get_current_user(session):
             'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0ZUB0ZXN0LmNvbSIsImV4cCI6MTcxNzAxMTk2Mn0.niBs8UoCtI-ihQhuUKC45ooTOk86j9mY1H_L0Q9kaaa',
         )
     assert str(excinfo.value) == '401: Could not validate credentials'
-
